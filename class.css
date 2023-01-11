@@ -1,0 +1,190 @@
+/*Boton Developer*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+/*Efecto maquina de escribir*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+html{
+    scroll-behavior: smooth;
+}
+header, body{
+    background-color: #000000;
+    background-repeat: unset;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+.inicio1{
+    justify-content: space-around;
+    background: none;
+    padding: 35px;
+    margin: 15px;
+}
+.pers{
+    background: none;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff; /*#9a9a9a;*/
+    font-size: 45px;
+    margin-top: 0px;
+}
+.persdow{
+    background: none;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #44d62c;
+    font-size: 30px;
+}
+.persdow1{
+    background: none;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin: 0px;
+}
+.title{
+    background: none;
+    text-align: center;
+    font: 600 2.25rem "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
+    color: #44d62c;
+    font-size: 40px;
+    margin: 10px;
+}
+.star{
+    background: #111111;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+}
+.phrase{
+    padding: 90px;
+    background: none;
+}
+.phrasetex{
+    color: #9a9a9a;
+    font: normal 1.125rem/1.5rem Roboto;
+    text-align: center;
+}
+.phrasetex1{
+    color: #9a9a9a;
+    font: normal 1rem/1.25rem Roboto;
+}
+.textdescription{
+    box-sizing: border-box;
+    width: 310px;
+    height: 100px;
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+.phraseAuthor{
+    color: #44d62c;
+    font: normal 1.125rem/1.5rem Roboto;
+    text-align: center;
+}
+.courses{
+    background-color: #111111;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.courseslu{
+    background: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+/*420PX- 480 MOBILE DEVICES*/
+@media (max-width:480px) and (min-width: 420px) {
+    .inicio1{
+        max-width: 330px;
+        margin: 0px;
+    }
+    .pers{
+        font-size: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+    .persdow{
+        font-size: 23px;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .phrasetex{
+        font: normal 14px Roboto;
+    }
+    .phrase{
+        padding-bottom: 10px;
+        padding-top: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .phraseAuthor{
+        margin-bottom: 0px;
+        text-align: center;
+    }
+}
+/*481px -768px iPads, Tablets*/
+@media (max-width: 768px) and (min-width: 481px){
+    .inicio1{
+        margin: 0px;
+    }
+    .pers{
+        font-size: 34px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        margin-left: 0px;
+    }
+    .persdow{
+        font-size: 25px;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .phrasetex{
+        font: normal 16px Roboto;
+    }
+    .phrase{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .phraseAuthor{
+        margin-bottom: 0px;
+        padding: 20px;
+    }
+}
+/*769px - 1024 Small screens, laptops*/
+@media (max-width: 1024px)and (min-width: 481px){
+    .pers{
+        font-size: 39px;
+    }
+    .persdow{
+        font-size: 31px;
+    }
+    .phrasetex{
+        font: normal 16px Roboto;
+    }
+    .phrase{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .phraseAuthor{
+        margin-bottom: 0px;
+    }
+}

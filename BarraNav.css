@@ -1,0 +1,196 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* General styles */
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+.naveg {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #f2f2f2;
+    justify-content: flex-end;
+    margin-top: 8px;
+    margin-right: 10px;
+    
+}
+.navegul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.link{
+    position: relative;
+    display: inline-block;
+}
+.link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #44d62c;
+    border-radius: 4px;
+    scale: 0 1;
+    transform-origin: left;
+    transition: scale 0.25s;
+}
+.link:hover::before {
+    scale: 1;
+}
+/*Boton Developer*/
+:root {
+    --font-style: 'Nunito Sans', sans-serif;
+}
+    button {
+    align-items: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #00ff00;
+    font-size: 14px;
+    cursor: pointer;
+    background: #222222;
+
+}
+span.contact {
+    display: block;
+    padding: 6px 14px;
+}
+button::before,
+button::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #44d62c;
+}
+span::before,
+span::after {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #44d62c;
+}
+button:hover::before,
+button:hover::after {
+    width: 100%;
+}      
+button:hover span::before,
+button:hover span::after {
+    height: 100%;
+}
+button::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+button span::after {
+    right: 0;
+    bottom: 0;
+    transition-duration: 0.4s;
+}
+button::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+button span::before {
+    left: 0;
+    top: 0;
+    transition-duration: 0.4s;
+}
+#toggler, .lab, .linkdev{
+    display: none;
+}
+@media (max-width:768px) {
+    .naveg {
+        margin: 0px;
+
+        padding: 0px;
+    }
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .navegul{
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        height: 100vh;
+        margin-top: 0px;
+        padding: 0px;
+        
+    }
+    .navegul li{
+        display: flex;
+        padding: 12px;
+        margin: 0px;
+    }
+    .lab{
+        display: block;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 500px;
+        transition: all 1s;
+        height: 100vh;
+    }
+    .ri-menu-line{
+        font-size: 29px;
+        cursor: pointer;
+        
+    }
+    .linkdev{
+        display: initial;
+    }
+    .linkdevtext{
+        color: #44d62c;
+
+    }
+    .linkdevmax{
+        display: none;
+    }
+}
+@media (max-width:1024px){
+    .link{
+        font-size: 14px;
+    }
+    button {
+        font-size: 13px;    
+    }
+    span.contact {
+        display: block;
+        padding: 4px 11px;
+    }
+    .navegul{
+        gap: 20px;
+    }
+    .lab{
+        margin-top: 4px;
+        margin-bottom: 4px;
+        margin-right: 10px;
+    }
+}
