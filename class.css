@@ -75,6 +75,7 @@ a:visited{
     color: #9a9a9a;
     font: normal 1rem/1.25rem Roboto;
 }
+
 .textdescription{
     box-sizing: border-box;
     width: 310px;
@@ -89,7 +90,7 @@ a:visited{
     text-align: center;
 }
 .courses{
-    background-color: #111111;
+    background-color: #000000;
     padding-top: 20px;
     padding-bottom: 20px;
 }

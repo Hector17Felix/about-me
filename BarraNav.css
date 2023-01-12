@@ -68,8 +68,8 @@ span.contact {
     display: block;
     padding: 6px 14px;
 }
-button::before,
-button::after {
+.developer::before,
+.developer::after {
     content: "";
     width: 0;
     height: 2px;
@@ -86,30 +86,30 @@ span::after {
     transition: all 0.2s linear;
     background: #44d62c;
 }
-button:hover::before,
-button:hover::after {
+.developer:hover::before,
+.developer:hover::after {
     width: 100%;
 }      
-button:hover span::before,
-button:hover span::after {
+.developer:hover span::before,
+.developer:hover span::after {
     height: 100%;
 }
-button::after {
+.developer::after {
     right: 0;
     bottom: 0;
     transition-duration: 0.4s;
 }
-button span::after {
+.developer span::after {
     right: 0;
     bottom: 0;
     transition-duration: 0.4s;
 }
-button::before {
+.developer::before {
     left: 0;
     top: 0;
     transition-duration: 0.4s;
 }
-button span::before {
+.developer span::before {
     left: 0;
     top: 0;
     transition-duration: 0.4s;
@@ -130,6 +130,10 @@ button span::before {
     display: none;
 }
 
+.followMovil{
+    display: none;
+}
+
 @media (max-width: 768px) {
     .developer{
         display: none;
@@ -142,28 +146,43 @@ button span::before {
     .navegul{
         flex-direction: column;
         background-color: #000000;
-        gap: 20px;
+        gap: 40px;
         margin-top: 0px;
-        padding: 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
     .navegul li {
         display: flex;
-        padding: 12px;
+
         margin: 0px;
     }
     .linkdev{
-        display: initial;
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin: 0px;
     }
     .linkdevtext{
         color: #44d62c;
-
     }
     .nav-toggle{
         display: block;
     }
+    .sizeimg{
+        width: 35px;
+        height: 35px;
+        padding: 9px;
+    }
+    .followMovil{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .menu_visible{
         max-height: 500px;
-        transition: cubic-bezier(0.7, 0.5, 0.3, .001) 0.5s;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
     }
 
 }
