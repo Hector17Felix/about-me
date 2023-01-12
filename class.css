@@ -75,11 +75,8 @@ a:visited{
     color: #9a9a9a;
     font: normal 1rem/1.25rem Roboto;
 }
-
 .textdescription{
     box-sizing: border-box;
-    width: 310px;
-    height: 100px;
     margin: 0px;
     margin-bottom: 10px;
     padding: 0px;
@@ -109,13 +106,13 @@ a:visited{
         margin: 0px;
     }
     .pers{
-        font-size: 30px;
+        font-size: 25px;
         margin-top: 0px;
         margin-bottom: 0px;
         margin-left: 0px;
     }
     .persdow{
-        font-size: 23px;
+        font-size: 19px;
         margin-top: 5px;
         margin-left: 0px;
         margin-right: 0px;
@@ -133,6 +130,14 @@ a:visited{
     .phraseAuthor{
         margin-bottom: 0px;
         text-align: center;
+    }
+    .textdescription{
+        box-sizing: border-box;
+        width: 310px;
+        height: 100px;
+        margin: 0px;
+        margin-bottom: 10px;
+        padding: 0px;
     }
 }
 /*481px -768px iPads, Tablets*/

@@ -124,7 +124,6 @@ span::after {
     border: none;
     font-size: 30px;
     padding: 0 20px;
-    line-height: 60px;
     cursor: pointer;
 
     display: none;
@@ -133,8 +132,7 @@ span::after {
 .followMovil{
     display: none;
 }
-
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 420px) {
     .developer{
         display: none;
     }
@@ -154,7 +152,6 @@ span::after {
     }
     .navegul li {
         display: flex;
-
         margin: 0px;
     }
     .linkdev{
@@ -168,6 +165,13 @@ span::after {
     }
     .nav-toggle{
         display: block;
+        margin: 0px;
+        padding: 0px;
+        margin-right: 10px;
+    }
+    .nav-toggle:active{
+        color: #00ff00;
+        background: none;
     }
     .sizeimg{
         width: 35px;
@@ -184,5 +188,8 @@ span::after {
         max-height: 500px;
         transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
     }
-
+    .nav{
+        margin: 0px;
+        padding: 0px;
+    }
 }
