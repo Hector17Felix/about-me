@@ -42,7 +42,7 @@ a:visited{
 .persdow1{
     background: none;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
+    color: #44d62c ;
     text-align: center;
     font-size: 25px;
     margin: 0px;
@@ -51,12 +51,12 @@ a:visited{
     background: none;
     text-align: center;
     font: 600 2.25rem "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
-    color: #44d62c;
+    color: #ffffff;
     font-size: 40px;
     margin: 10px;
 }
 .star{
-    background: #111111;
+    background: #0f0f0f;
     display: flex;
     justify-content: space-between;
     margin: 0px;
@@ -77,6 +77,8 @@ a:visited{
 }
 .textdescription{
     box-sizing: border-box;
+    width: 340px;
+    height: 100px;
     margin: 0px;
     margin-bottom: 10px;
     padding: 0px;
@@ -86,24 +88,89 @@ a:visited{
     font: normal 1.125rem/1.5rem Roboto;
     text-align: center;
 }
+/*Seccion Courses*/
 .courses{
-    background-color: #000000;
+    background-color: #0f0f0f;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .courseslu{
     background: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
 }
+.bordercour{
+    margin: 20px;
+}
+    .clickable-card {
+    display: block;
+    max-width: 400px;
+    margin-inline: auto;
+    overflow: hidden;
+    box-shadow: none;
+    background: #0f0f0f;
+    transform-origin: center center;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: #9a9a9a;
+}
+.clickable-card h2,
+.clickable-card .read-more {
+    transition: color 0.4s ease-in-out;
+}
+.clickable-card img {
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+}
+.clickable-card:hover .read-more,
+.clickable-card:focus .read-more,
+.clickable-card:hover h2,
+.clickable-card:focus h2 {
+    color: #44d62c;
+}
+.clickable-card:hover img,
+.clickable-card:focus img {
+    transform: scale(1.1);
+}
+.article-body {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.clickable-card h2 {
+    margin: 0 0 18px 0;
+    font-size: 1.9rem;
+    letter-spacing: 0.06em;
+    transition: color 0.3s ease-out;
+}
+img {
+    max-width: 100%;
+}
+figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /*420PX- 480 MOBILE DEVICES*/
-@media (max-width:480px) and (min-width: 420px) {
+@media (max-width:480px) and (min-width: 0px) {
     .inicio1{
         max-width: 330px;
         margin: 0px;
+    }
+    .imgs{
+        width:"310px";
+        height:"220px";
     }
     .pers{
         font-size: 25px;
@@ -118,11 +185,22 @@ a:visited{
         margin-right: 0px;
         margin-bottom: 0px;
     }
+    .persdow1{
+        font-size: 20px;
+    }
+    .title{
+        font: 600 2.25rem "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
+        font-size: 25px;
+    }
+    .phrasetex1{
+        color: #9a9a9a;
+        font: normal 14px Roboto;
+    }
     .phrasetex{
         font: normal 14px Roboto;
     }
     .phrase{
-        padding-bottom: 10px;
+        padding-bottom: 50px;
         padding-top: 50px;
         padding-left: 10px;
         padding-right: 10px;
@@ -157,6 +235,10 @@ a:visited{
         margin-left: 0px;
         margin-right: 0px;
         margin-bottom: 0px;
+    }
+    .title{
+        font: 600 2.25rem "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
+        font-size: 35px;
     }
     .phrasetex{
         font: normal 16px Roboto;
