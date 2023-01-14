@@ -60,7 +60,7 @@ a:visited{
     display: flex;
     margin: 0px;
     padding: 0px;
-    min-height: 100vh;
+    min-height: 80vh;
     justify-content: center;
     align-items: center;
 }
@@ -95,6 +95,27 @@ a:visited{
 .courses{
     background-color: #0f0f0f;
     padding-top: 20px;
+    padding-bottom: 20px;
+}
+.skill{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0px;
+}
+.skillimg{
+    height: 4.5rem;
+    margin: 35px;
+}
+.skillimg:hover{
+    transition: all 0.6s;
+    filter: drop-shadow( 1px 1px 17px #fffafa56 );
+}
+.skilldiv{
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 20px;
 }
 .courseslu{
@@ -182,6 +203,11 @@ figure {
     .imgs{
         width:"310px";
         height:"220px";
+    }
+    .skillimg{
+        height: 4rem;
+        margin: 15px;
+        padding: 0px;
     }
     .pers{
         font-size: 2rem !important;
@@ -273,28 +299,6 @@ figure {
         padding: 20px;
     }
 }
-/*769px - 1024 Small screens, laptops
-@media (max-width: 1024px)and (min-width: 481px){
-    .pers{
-        font-size: 39px;
-    }
-    .persdow{
-        font-size: 31px;
-    }
-    .phrasetex{
-        font: normal 16px Roboto;
-    }
-    .phrase{
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .phraseAuthor{
-        margin-bottom: 0px;
-    }
-}*/
-
 .reveal{
     position: relative;
     transform: translateY(150px);
