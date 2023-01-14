@@ -58,9 +58,11 @@ a:visited{
 .star{
     background: #0f0f0f;
     display: flex;
-    justify-content: space-between;
     margin: 0px;
     padding: 0px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 .phrase{
     padding: 90px;
@@ -292,3 +294,14 @@ figure {
         margin-bottom: 0px;
     }
 }*/
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
