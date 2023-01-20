@@ -373,7 +373,7 @@ img.imgs{
         margin: 0px;
     }
     .card{
-        width: 55vh;
+        width: 50vh;
         padding: 20px 0px 20px 0px;
         height: 400px;
     }
@@ -445,13 +445,17 @@ img.imgs{
     }
     .bordercour{
             /*top right botton letf */
-        margin: 10px 20px 10px 20px;
+        margin: 10px 10px 10px 10px;
     }
     .article-body{
         padding: 15px;
     }
     .card-social {
         opacity: 100%;
+    }
+    .card-subtitle{
+        padding: 0px;
+        margin: 0px;
     }
 }
 /*481px -768px iPads, Tablets*/
