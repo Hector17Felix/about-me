@@ -6,6 +6,7 @@ navToggle.addEventListener("click", () => {
     navul.classList.toggle("menu_visible");
 });
 //
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
 
