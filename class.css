@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 header, body{
-    background-color: #0e0e10/*#050505*/;
+    background-color: rgb(14, 14, 16)/*#050505*/;
     margin: 0px;
     padding: 0px;
 }
@@ -22,7 +22,6 @@ a:visited{
 }
 .inicio1{
     justify-content: space-around;
-    background: none;
     padding: 35px;
     margin: 15px;
     width: 85%;
@@ -62,6 +61,8 @@ a:visited{
     margin: 10px;
 }
 .star{
+    background-image: url('./images/pexels-neo-2653362.jpg');
+    background-size: cover;
     display: flex;
     margin: 0px;
     padding: 0px;
@@ -348,6 +349,9 @@ img.imgs{
     .star{
         align-items: center;
         min-height: 80vh;
+        min-height: 100%;
+        background: url('./images/neo1.jpg');
+        background-size: cover;
     }
     .imgs{
         width:"310px";
@@ -373,12 +377,19 @@ img.imgs{
         margin: 0px;
     }
     .card{
-        width: 50vh;
+        width: 48vh;
         padding: 20px 0px 20px 0px;
-        height: 400px;
+        height: 380px;
     }
     .card-avatar{
         margin-bottom: 5px;
+    }
+    .divcard{
+        padding: 0px;
+    }
+    .card-social__item {
+        padding: 0px 10px 0px 10px;
+        list-style: none;
     }
     .persdiv{
         display: flex;
@@ -445,7 +456,7 @@ img.imgs{
     }
     .bordercour{
             /*top right botton letf */
-        margin: 10px 10px 10px 10px;
+        margin: 10px 0px 10px 0px;
     }
     .article-body{
         padding: 15px;
@@ -462,6 +473,7 @@ img.imgs{
 @media (max-width: 768px) and (min-width: 481px){
     .star{
         justify-content: center;
+        background-size: cover;
     }
     .inicio1{
         margin: 0px;
