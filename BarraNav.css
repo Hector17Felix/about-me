@@ -21,7 +21,6 @@ a:visited{
 .link{ /*.nav-link*/
     position: relative;
     display: inline-block;
-
 }
 .navegul{/*nav-menu*/
     list-style: none;
