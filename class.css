@@ -411,11 +411,12 @@ img.imgs{
     }
     .gifStarDiv{
         display: none;
-        margin: 45px 0px 30px 0px;
+        margin: 55px 0px 30px 0px;
         display: flex;
         justify-content: center;
     }
     .gifStar{
+        padding-top: 15px;
         filter: drop-shadow( 1px 1px 9px #ffffff82 );
         width: 60%;
     }
