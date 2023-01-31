@@ -99,9 +99,8 @@ a:visited{
     text-align: center;
 }
 .gifStarDiv{
-    display: flex;
     float: inline-end;
-    }
+}
 .gifStar{
     /*drop-shadow( 0px 0px 2px #ffffff );*/
     filter: drop-shadow( 1px 1px 20px #ffffff70 );

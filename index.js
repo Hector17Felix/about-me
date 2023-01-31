@@ -1,19 +1,26 @@
+//Barra de Navegacion Responsive
 let navToggle = document.querySelector(".nav-toggle");
-var navul = document.querySelector(".menu");
-let closed = document.querySelector(".navegul");
+let navul = document.querySelector(".menu");
+const gifStarDiv = document.querySelector('.gifStarDiv');
 
 navToggle.addEventListener("click", () => {
     navul.classList.toggle("menu_visible");
-});
-//
 
+    if (gifStarDiv.style.display === 'none' ) {
+        gifStarDiv.style.display = 'flex';
+    } else {
+        gifStarDiv.style.display = 'none';
+    }
+});
+
+//Efecto Parallax
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
+    let reveals = document.querySelectorAll(".reveal");
 
 for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 100;
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 100;
 
     if (elementTop < windowHeight - elementVisible) {
     reveals[i].classList.add("active");
@@ -22,5 +29,12 @@ for (var i = 0; i < reveals.length; i++) {
     }
 }
 }
-
 window.addEventListener("scroll", reveal);
+
+//Quitar clases
+setTimeout(function(){
+    const elements = document.querySelectorAll("*");
+    elements.forEach(element => {                 
+    element.classList.remove("animate__animated", "animate__fadeIn", "animate__fadeInDown", "animate__fadeInUp", "animate__slower", "animate__slideInLeft",);
+});
+}, 2000);

@@ -150,20 +150,29 @@ span::after {
         display: none;
     }
     .menu{
+        background-color:#0e0e10;
+        position: fixed;
+        top: 50px;
         width: 100%;
-        max-height: 0;
-        overflow: hidden;
+        height: calc(100% - 50px);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
     }
     .navegul{
         flex-direction: column;
         gap: 40px;
         margin-top: 0px;
+        margin-bottom: 0px;
         padding-left: 0px;
         padding-bottom: 0px;
-        margin-bottom: 0px;
     }
     .navegul li {
         margin: 0px;
+    }
+    .navegul:hover,
+    .nav-toggle_active{
+        background: none;
     }
     .linkdev{
         display: block;
@@ -176,15 +185,12 @@ span::after {
     }
     .nav-toggle{
         display: block;
-        margin: 0px;
         padding: 0px;
         margin-right: 10px;
         margin-top: 2px;
     }
-    .nav-toggle:active{
-        color: #00ff00;
-        background: none;
-        transition: all 5s;
+    .nav-toggle:focus:not(:focus-visible) {
+        outline: none;
     }
     .sizeimg{
         width: 45px;
@@ -197,8 +203,7 @@ span::after {
         justify-content: center;
     }
     .menu_visible{
-        max-height: 500px;
-        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 4s;
+        left: 0;
     }
     .nav{
         margin: 0px;
