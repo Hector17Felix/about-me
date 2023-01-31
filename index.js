@@ -1,26 +1,19 @@
 //Barra de Navegacion Responsive
-let navToggle = document.querySelector(".nav-toggle");
-let navul = document.querySelector(".menu");
-const gifStarDiv = document.querySelector('.gifStarDiv');
+const navToggle = document.querySelector(".nav-toggle");
+const navul = document.querySelector(".menu");
 
 navToggle.addEventListener("click", () => {
     navul.classList.toggle("menu_visible");
-
-    if (gifStarDiv.style.display === 'none' ) {
-        gifStarDiv.style.display = 'flex';
-    } else {
-        gifStarDiv.style.display = 'none';
-    }
 });
 
 //Efecto Parallax
 function reveal() {
-    let reveals = document.querySelectorAll(".reveal");
+    const reveals = document.querySelectorAll(".reveal");
 
 for (var i = 0; i < reveals.length; i++) {
-    let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 100;
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 100;
 
     if (elementTop < windowHeight - elementVisible) {
     reveals[i].classList.add("active");

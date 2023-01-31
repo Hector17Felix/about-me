@@ -157,7 +157,7 @@ span::after {
         height: calc(100% - 50px);
         overflow-y: auto;
         left: 100%;
-        transition: left 0.3s;
+        transition: left 1s;
     }
     .navegul{
         flex-direction: column;

@@ -21,7 +21,6 @@ a:visited{
 	text-decoration: none;
 }
 .inicio1{
-    justify-content: space-around;
     padding: 35px;
     margin: 15px;
     width: 85%;
@@ -99,8 +98,9 @@ a:visited{
     text-align: center;
 }
 .gifStarDiv{
+    display: flex;
     float: inline-end;
-}
+    }
 .gifStar{
     /*drop-shadow( 0px 0px 2px #ffffff );*/
     filter: drop-shadow( 1px 1px 20px #ffffff70 );
@@ -376,7 +376,7 @@ img.imgs{
         margin: 0px;
     }
     .card{
-        width: 48vh;
+        width: 100%;
         padding: 20px 0px 20px 0px;
         height: 380px;
     }
@@ -411,7 +411,7 @@ img.imgs{
     }
     .gifStarDiv{
         display: none;
-        margin: 20px 0px 30px 0px;
+        margin: 45px 0px 30px 0px;
         display: flex;
         justify-content: center;
     }
