@@ -8,7 +8,7 @@ background: none;
 }
 .wrapper{
   background: none;
-  display: inline-flex;
+  display: flex;
 }
 .fa{
   color: #1778f2;

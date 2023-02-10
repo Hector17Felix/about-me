@@ -7,8 +7,8 @@ html{
 }
 header, body{
     background-color: rgb(14, 14, 16)/*#050505*/;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -29,25 +29,27 @@ a:visited{
 .pers{
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff; /*#9a9a9a;*/
-    font-size: 45px;
+    font-size: 2.79rem;
 }
 .persdiv{
-    display: inline-block;
     background: none;
     margin-top: 0px;
+}
+.persdiv1{
+    display: inline-flex;
 }
 .persdow{
     background: none;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #44d62c;
-    font-size: 30px;
+    font-size: 1.89rem;
 }
 .persdow1{
     background: none;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #44d62c ;
     text-align: start;
-    font-size: 28px;
+    font-size: 1.7rem;
     margin: 0px;
     margin-bottom: 25px;
 }
@@ -64,9 +66,10 @@ a:visited{
     background-size: cover;
     display: flex;
     margin: 0px;
-    padding: 0px;
+    padding: 0px; 
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
+    
 }
 .phrase{
     padding: 90px;
@@ -106,7 +109,7 @@ a:visited{
     filter: drop-shadow( 1px 1px 20px #ffffff70 );
     width: 50vh;
 }
-/*Seccion Courses false*/
+/*Seccion Courses*/
 .courses{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -160,7 +163,7 @@ a:visited{
 }
 .clickable-card img {
     transform-origin: center;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 .clickable-card:hover .read-more,
 .clickable-card:focus .read-more,
@@ -225,7 +228,7 @@ img.imgs{
 .card {
     margin: 0px;
     width: 260px;
-    height: 400px;
+    height: 420px;
     background: none;
     border-radius: 5%;
     padding: 1rem 1.5rem;
@@ -294,14 +297,14 @@ img.imgs{
     /*Text*/
 .card-title {
     color: #44d62c;
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
     padding-bottom: 10px;
     }
 .card-subtitle {
     margin: 0px 20px 0px 20px;
     color: #9a9a9a;
-    font: normal 14px Roboto;
+    font: normal 0.99rem Roboto;
     text-align: center;
     }
     /*Hover*/
@@ -339,11 +342,14 @@ img.imgs{
         margin: 0px 10px 0 10px;
     }
     .inicio1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         margin: 0px;
         padding: 0px;
         padding-left: 5px;
         padding-right: 5px;
-        align-items: center;
     }
     .star{
         align-items: center;
@@ -425,16 +431,15 @@ img.imgs{
         font-size: 20px;
     }
     .title{
-        font: 600 2.25rem "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
-        font-size: 25px;
+        font: 600 1.65rem "Titillium Web",RazerF5,Arial,Helvetica,sans-serif;
     }
     .phrasetex1{
         color: #9a9a9a;
-        font: normal 14px Roboto;
+        font: normal 1rem Roboto;
         text-align: justify;
     }
     .phrasetex{
-        font: normal 14px Roboto;
+        font: normal 1rem Roboto;
     }
     .phrase{
         padding-bottom: 10px;
@@ -476,6 +481,11 @@ img.imgs{
         background-size: cover;
     }
     .inicio1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
         margin: 0px;
         padding: 19px;
     }
@@ -513,7 +523,7 @@ img.imgs{
         font-size: 35px;
     }
     .phrasetex{
-        font: normal 16px Roboto;
+        font: normal 1rem Roboto;
     }
     .phrase{
         padding-bottom: 25px;
@@ -573,7 +583,7 @@ footer{
     align-items: center;
     flex-direction: column;
     background-color: #0e0e10;
-    font-size: 13px;
+    font-size: .8rem;
     color: #fff;
     height: 15vh;
 }
