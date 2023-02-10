@@ -24,10 +24,25 @@ for (var i = 0; i < reveals.length; i++) {
 }
 window.addEventListener("scroll", reveal);
 
-//Quitar clases
+//Quitar las animaciones (clases) de entrada
 setTimeout(function(){
     const elements = document.querySelectorAll("*");
     elements.forEach(element => {                 
-    element.classList.remove("animate__animated", "animate__fadeIn", "animate__fadeInDown", "animate__fadeInUp", "animate__slower", "animate__slideInLeft",);
+    element.classList.remove
+        ("animate__animated",
+        "animate__fadeIn",
+        "animate__fadeInDown",
+        "animate__fadeInUp",
+        "animate__slower",
+        "animate__slideInLeft",);
 });
 }, 2000);
+
+//Bloquear Scroll
+document.getElementById("blockScroll").addEventListener("click", function(){
+    if (document.body.style.overflow === "hidden") {
+        document.body.style.overflow = "auto";
+    } else {
+        document.body.style.overflow = "hidden";
+    }
+});

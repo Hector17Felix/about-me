@@ -61,7 +61,6 @@ a:visited{
     font-size: 1rem;
     cursor: pointer;
     background: #222222;
-
 }
 span.contact {
     display: block;
@@ -157,7 +156,7 @@ span::after {
         height: calc(100% - 50px);
         overflow-y: auto;
         left: 100%;
-        transition: left .7s;
+        transition: left .7 s;
     }
     .navegul{
         flex-direction: column;
